@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# 🛋️ Furniture Website – Dream Modular Furnitures
+
+A modern, responsive furniture website built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **Supabase**.
+
+## 🚀 Features
+- Modern UI/UX design
+- Product catalog & gallery
+- Contact & enquiry system
+- SEO-friendly architecture
+- Scalable backend (Supabase)
+
+## 🧱 Tech Stack
+- Frontend: Next.js (App Router), TypeScript
+- Styling: Tailwind CSS
+- Backend: Next.js API Routes
+- Database & Storage: Supabase
+- Hosting: Vercel
+>>>>>>> 2b84d25a5f70d5f6a92ae2ff01a08de0184bdc44
