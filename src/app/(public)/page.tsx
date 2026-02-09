@@ -1,7 +1,20 @@
 // Home Page - DreamFurniture
 // Contains: Hero, Services, Why Choose Us, Featured Products, Testimonials, CTA
 
+import type { Metadata } from 'next'
 import Link from "next/link";
+
+// ----- PAGE METADATA -----
+// Overrides global metadata for the Home page
+export const metadata: Metadata = {
+  title: 'Premium Home Furniture | Modern & Custom Designs',
+  description: 'Discover premium furniture crafted for comfort and style. Custom furniture, free delivery, and expert interior design. Transform your living space today.',
+  openGraph: {
+    title: 'DreamFurniture | Premium Home Furniture',
+    description: 'Discover premium furniture crafted for comfort and style. Transform your living space with our curated collection.',
+    url: '/',
+  },
+}
 
 export default function Home() {
   return (

@@ -1,5 +1,18 @@
 // About Page - DreamFurniture
 
+import type { Metadata } from 'next'
+
+// ----- PAGE METADATA -----
+// Overrides global metadata for the About page
+export const metadata: Metadata = {
+    title: 'About Us',
+    description: 'Learn about DreamFurniture - 15+ years crafting premium furniture. Discover our story, values, and commitment to quality craftsmanship and customer satisfaction.',
+    openGraph: {
+        title: 'About Us | DreamFurniture',
+        description: 'Learn about DreamFurniture - 15+ years crafting premium furniture with quality craftsmanship.',
+        url: '/about',
+    },
+}
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-white py-24 px-6">

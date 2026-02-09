@@ -1,5 +1,18 @@
 // Contact Page - DreamFurniture
 
+import type { Metadata } from 'next'
+
+// ----- PAGE METADATA -----
+// Overrides global metadata for the Contact page
+export const metadata: Metadata = {
+    title: 'Contact Us',
+    description: 'Get in touch with DreamFurniture. Request a quote, schedule a consultation, or ask about our premium furniture collection. We\'re here to help.',
+    openGraph: {
+        title: 'Contact Us | DreamFurniture',
+        description: 'Get in touch with DreamFurniture. Request a quote or schedule a consultation.',
+        url: '/contact',
+    },
+}
 export default function ContactPage() {
     return (
         <div className="min-h-screen bg-white py-24 px-6">
