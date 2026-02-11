@@ -32,7 +32,7 @@ export default async function GalleryPage() {
             <div className="min-h-screen bg-white py-24 px-6">
                 <div className="mx-auto max-w-7xl">
                     <div className="text-center">
-                        <h1 className="text-4xl font-bold text-zinc-900">Gallery</h1>
+                        <h1 className="text-4xl font-bold text-gray-900">Gallery</h1>
                         <p className="mt-4 text-lg text-red-600">
                             Unable to load gallery. Please try again later.
                         </p>
@@ -58,8 +58,8 @@ export default async function GalleryPage() {
             <div className="mx-auto max-w-7xl">
                 {/* Page Header */}
                 <div className="mb-12 text-center">
-                    <h1 className="text-4xl font-bold text-zinc-900">Gallery</h1>
-                    <p className="mt-4 text-lg text-zinc-600">
+                    <h1 className="text-4xl font-bold text-gray-900">Gallery</h1>
+                    <p className="mt-4 text-lg text-gray-600">
                         Browse beautiful room inspirations and furniture showcases.
                     </p>
                 </div>

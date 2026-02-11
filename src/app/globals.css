@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* Light mode default */
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -10,17 +11,24 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom Orange Palette for primary actions */
+  --color-primary: #ea580c;
+  /* orange-600 */
+  --color-primary-hover: #c2410c;
+  /* orange-700 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Force light mode for consistency as per design request */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global utility for consistent widths */
+.container-custom {
+  @apply mx-auto max-w-7xl px-6;
 }

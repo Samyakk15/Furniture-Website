@@ -31,7 +31,7 @@ export default async function ProductsPage() {
             <div className="min-h-screen bg-white py-24 px-6">
                 <div className="mx-auto max-w-7xl">
                     <div className="text-center">
-                        <h1 className="text-4xl font-bold text-zinc-900">Our Products</h1>
+                        <h1 className="text-4xl font-bold text-gray-900">Our Products</h1>
                         <p className="mt-4 text-lg text-red-600">
                             Unable to load products. Please try again later.
                         </p>
@@ -46,8 +46,8 @@ export default async function ProductsPage() {
             <div className="mx-auto max-w-7xl">
                 {/* Page Header */}
                 <div className="mb-12 text-center">
-                    <h1 className="text-4xl font-bold text-zinc-900">Our Products</h1>
-                    <p className="mt-4 text-lg text-zinc-600">
+                    <h1 className="text-4xl font-bold text-gray-900">Our Products</h1>
+                    <p className="mt-4 text-lg text-gray-600">
                         Explore our curated collection of premium furniture.
                     </p>
                 </div>
