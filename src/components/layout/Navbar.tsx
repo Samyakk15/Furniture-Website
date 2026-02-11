@@ -72,11 +72,11 @@ export default function Navbar() {
                     {/* Desktop CTA */}
                     <div className="hidden items-center gap-4 md:flex">
                         <a
-                            href="tel:+1234567890"
+                            href="tel:+919876543210"
                             className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                         >
                             <Phone className="h-4 w-4" />
-                            <span>(555) 123-4567</span>
+                            <span>+91 98765 43210</span>
                         </a>
                         <Link
                             href="/contact"

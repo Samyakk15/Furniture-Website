@@ -10,7 +10,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
     // Fallback image for products without images
-    const imageUrl = product.image_url || '/placeholder-product.png'
+    const imageUrl = product.image_url || '/images/placeholder.jpg'
 
     return (
         <Link href={`/products/${product.id}`} className="group block h-full">
@@ -50,7 +50,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     <div className="mt-4 flex items-center justify-between border-t border-gray-100 pt-4">
                         {product.price !== null ? (
                             <p className="text-xl font-bold text-orange-600">
-                                ${product.price.toLocaleString()}
+                                ₹ {product.price.toLocaleString('en-IN')}
                             </p>
                         ) : (
                             <span className="text-sm font-medium text-gray-500">Price on request</span>

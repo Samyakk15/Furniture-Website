@@ -4,21 +4,21 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
     {
-        content: "Absolutely love my new living room set! The quality exceeded my expectations and the delivery was seamless.",
-        author: "Sarah Johnson",
-        role: "Verified Buyer",
+        content: "Excellent workmanship and timely delivery. Highly recommended!",
+        author: "Rohit Sharma",
+        role: "Nagpur",
         rating: 5
     },
     {
-        content: "The custom dining table is a masterpiece. DreamFurniture truly understands craftsmanship and attention to detail.",
-        author: "Michael Chen",
-        role: "Interior Designer",
+        content: "The modular kitchen design was perfect for our space.",
+        author: "Priya Deshmukh",
+        role: "Pune",
         rating: 5
     },
     {
-        content: "Outstanding customer service and beautiful furniture. Highly recommend for anyone furnishing their home.",
-        author: "Emily Rodriguez",
-        role: "Homeowner",
+        content: "Great quality materials and professional installation.",
+        author: "Amit Patil",
+        role: "Mumbai",
         rating: 5
     }
 ]

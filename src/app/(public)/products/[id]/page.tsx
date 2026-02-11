@@ -95,7 +95,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                         {/* Price */}
                         {productData.price !== null && (
                             <p className="mt-4 text-3xl font-bold text-orange-600">
-                                ${productData.price.toLocaleString()}
+                                ₹ {productData.price.toLocaleString('en-IN')}
                             </p>
                         )}
 

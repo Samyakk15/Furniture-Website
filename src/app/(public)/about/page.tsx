@@ -12,13 +12,16 @@ export default function AboutPage() {
             {/* Section 1 — About Dream Modular & Furnitures (Hero Intro) */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                        About Dream Modular & Furnitures
-                    </h1>
-                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto text-lg">
+                    <div className="mb-12 text-center">
+                        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                            About Dream Modular & Furnitures
+                        </h1>
+                        <div className="w-20 h-1 bg-orange-600 mx-auto rounded"></div>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto text-lg mb-6">
                         Dream Modular & Furnitures is dedicated to creating modern, functional, and aesthetically pleasing furniture solutions for homes and offices. We specialize in custom modular designs that combine quality craftsmanship, smart space utilization, and contemporary style.
                     </p>
-                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto mt-6 text-lg">
+                    <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto text-lg">
                         Our goal is to transform everyday spaces into comfortable, elegant, and highly functional environments that reflect our customers’ lifestyle and needs.
                     </p>
                 </div>
@@ -129,7 +132,7 @@ export default function AboutPage() {
                             { number: '1500+', label: 'Custom Creations' },
                             { number: '260+', label: 'Premium Designs' },
                         ].map((stat, index) => (
-                            <div key={index} className="bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-300">
+                            <div key={index} className="bg-white rounded-lg shadow-sm p-8">
                                 <div className="text-3xl font-bold text-orange-600 mb-2">
                                     {stat.number}
                                 </div>
