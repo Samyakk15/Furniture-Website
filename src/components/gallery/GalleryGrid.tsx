@@ -13,6 +13,11 @@ interface GalleryGridProps {
 export function GalleryGrid({ items, categories }: GalleryGridProps) {
     const [activeCategory, setActiveCategory] = useState<string>('All')
     const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
+    const [failedImages, setFailedImages] = useState<Set<string>>(new Set())
+
+    const handleImageError = (id: string) => {
+        setFailedImages((prev) => new Set(prev).add(id))
+    }
 
     const filteredItems = activeCategory === 'All'
         ? items
@@ -69,13 +74,14 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
                         className="group relative cursor-pointer overflow-hidden rounded-lg bg-gray-100 shadow-sm transition hover:shadow-md"
                         onClick={() => setSelectedImage(item)}
                     >
-                        <div className="aspect-[4/3] relative overflow-hidden">
+                        <div className="aspect-[4/3] relative overflow-hidden bg-gray-200">
                             <Image
-                                src={item.image_url || '/placeholder-gallery.png'}
+                                src={failedImages.has(item.id) ? '/placeholder-gallery.png' : (item.image_url || '/placeholder-gallery.png')}
                                 alt={item.title || 'Gallery image'}
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                onError={() => handleImageError(item.id)}
                             />
                             {/* Soft overlay on hover */}
                             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
@@ -114,7 +120,7 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img
-                            src={selectedImage.image_url || '/placeholder-gallery.png'}
+                            src={failedImages.has(selectedImage.id) ? '/placeholder-gallery.png' : (selectedImage.image_url || '/placeholder-gallery.png')}
                             alt={selectedImage.title || 'Gallery full view'}
                             className="max-h-[85vh] w-auto object-contain"
                         />
